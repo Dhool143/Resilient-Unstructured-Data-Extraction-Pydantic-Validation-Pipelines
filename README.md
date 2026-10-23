@@ -1,6 +1,6 @@
 # Structured Data Extractor
 
-**Author:** Fathiya Yoosef
+
 
 An invoice extraction application built with Python, Streamlit, OpenAI
 Structured Outputs, and Pydantic v2.
