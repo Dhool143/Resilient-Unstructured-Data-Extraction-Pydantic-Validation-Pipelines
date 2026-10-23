@@ -1,0 +1,10 @@
+{
+  "created_at": "2026-10-23T04:48:39.399885+00:00",
+  "execution_status": "DLQ_FAILED",
+  "attempts_used": 1,
+  "raw_text": "Invoice: INV-1001\nVendor: Seattle Office Supplies\nDate: 12th of Oct, 2024\nCurrency: USD\n\nNotebooks: quantity 2, unit price $10.00, line total $20.00\nPens: quantity 3, unit price $5.00, line total $15.00\n\nSubtotal: $35.00\nTax: $3.50\nTotal: $38.50\n",
+  "last_payload": "",
+  "error_log": [
+    "Attempt 1: Missing credentials. Please pass an `api_key`, `workload_identity`, `admin_api_key`, or set the `OPENAI_API_KEY` or `OPENAI_ADMIN_KEY` environment variable."
+  ]
+}
