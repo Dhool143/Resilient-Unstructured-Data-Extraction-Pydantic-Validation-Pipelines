@@ -24,7 +24,14 @@ def build_reflection_prompt(
     ]
 
     # Bound the prompt size instead of repeating unlimited document text.
-    context = raw_text[:6000]
+    if len(raw_text) <= 6000:
+        context = raw_text
+    else:
+        context = (
+            raw_text[:3000]
+            + "\n[Middle section omitted]\n"
+            + raw_text[-3000:]
+        )
     previous_output = previous_response[:6000]
 
     return (

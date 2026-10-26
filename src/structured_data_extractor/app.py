@@ -207,11 +207,12 @@ if extract_clicked or failure_clicked:
                 else:
                     st.warning("The failure record could not be saved.")
 
-        with st.expander("Validation errors", expanded=bool(result.error_log)):
-            if result.error_log:
+        with st.expander("Extraction and validation errors", expanded=bool(result.error_log),
+               ):
+         if result.error_log:
                 for error in result.error_log:
                     st.code(error, language="text")
-            else:
+         else:
                 st.write("No validation errors.")
 
         with st.expander("Exact corrective prompts"):
